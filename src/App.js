@@ -153,7 +153,7 @@ const displaySearchMoviesForm = () => {
         type="text"
         style={styles.text}
         value={titleQuery}
-        placeholder="Enter Movie Title here"
+        placeholder="Enter the movie title here"
         onChange={event => setTitleQuery(event.target.value)}
       />
       <Button style={styles.searchButton} type="submit">Search</Button>
