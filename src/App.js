@@ -133,7 +133,7 @@ const styles = {
 };
 
 function App() {
-const [titleQuery, setTitleQuery] = useState('Enter title here');
+const [titleQuery, setTitleQuery] = useState('');
 const [isUserValidated, setIsUserValidated] = useState(false);
 //TODO: the user and password are set for default for UI testing only
 const [login, setLogin] = useState('user');
@@ -153,6 +153,7 @@ const displaySearchMoviesForm = () => {
         type="text"
         style={styles.text}
         value={titleQuery}
+        placeholder="Enter Movie Title here"
         onChange={event => setTitleQuery(event.target.value)}
       />
       <Button style={styles.searchButton} type="submit">Search</Button>
